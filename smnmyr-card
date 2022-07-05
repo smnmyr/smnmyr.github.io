@@ -10,23 +10,23 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix acp: <http://www.w3.org/ns/solid/acp#> .
 
-<https://pod.inrupt.com/smnmyr/profile/card>
+<https://smnmyr.github.io/smnmyr-card>
         rdf:type  ldp:RDFSource .
 
-<https://pod.inrupt.com/smnmyr/profile/card#workemail>
+<https://smnmyr.github.io/smnmyr-card#workemail>
         vcard:value  <mailto:simon.mayer@unisg.ch> ;
         rdf:type     vcard:Work .
 
-<https://pod.inrupt.com/andreiciortea/profile/card>
+<https://smnmyr.github.io/smnmyr-card>
         rdf:type           foaf:PersonalProfileDocument ;
-        foaf:maker         <https://pod.inrupt.com/smnmyr/profile/card#me> ;
-        foaf:primaryTopic  <https://pod.inrupt.com/smnmyr/profile/card#me> .
+        foaf:maker         <https://smnmyr.github.io/smnmyr-card#me> ;
+        foaf:primaryTopic  <https://smnmyr.github.io/smnmyr-card#me> .
 
-<https://pod.inrupt.com/smnmyr/profile/card#me>
+<https://smnmyr.github.io/smnmyr-card#me>
         rdf:type                 <http://schema.org/Person> ;
         ldp:inbox                <https://pod.inrupt.com/smnmyr/inbox/> ;
         vcard:fn                 "Simon Mayer" ;
-        vcard:hasEmail           <https://pod.inrupt.com/smnmyr/profile/card#workemail> ;
+        vcard:hasEmail           <https://smnmyr.github.io/smnmyr-card#workemail> ;
         foaf:name                "smnmyr" ;
         <http://www.w3.org/ns/solid/terms#account>  <https://pod.inrupt.com/smnmyr/> ;
         rdf:type                 foaf:Person ;
