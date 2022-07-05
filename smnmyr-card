@@ -1,0 +1,40 @@
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix acl: <http://www.w3.org/ns/auth/acl#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix acp: <http://www.w3.org/ns/solid/acp#> .
+
+<https://pod.inrupt.com/smnmyr/profile/card>
+        rdf:type  ldp:RDFSource .
+
+<https://pod.inrupt.com/smnmyr/profile/card#workemail>
+        vcard:value  <mailto:simon.mayer@unisg.ch> ;
+        rdf:type     vcard:Work .
+
+<https://pod.inrupt.com/andreiciortea/profile/card>
+        rdf:type           foaf:PersonalProfileDocument ;
+        foaf:maker         <https://pod.inrupt.com/smnmyr/profile/card#me> ;
+        foaf:primaryTopic  <https://pod.inrupt.com/smnmyr/profile/card#me> .
+
+<https://pod.inrupt.com/smnmyr/profile/card#me>
+        rdf:type                 <http://schema.org/Person> ;
+        ldp:inbox                <https://pod.inrupt.com/smnmyr/inbox/> ;
+        vcard:fn                 "Simon Mayer" ;
+        vcard:hasEmail           <https://pod.inrupt.com/smnmyr/profile/card#workemail> ;
+        foaf:name                "smnmyr" ;
+        <http://www.w3.org/ns/solid/terms#account>  <https://pod.inrupt.com/smnmyr/> ;
+        rdf:type                 foaf:Person ;
+        <http://www.w3.org/ns/pim/space#preferencesFile>  <https://pod.inrupt.com/smnmyr/settings/prefs.ttl> ;
+        <http://www.w3.org/ns/solid/terms#privateTypeIndex>  <https://pod.inrupt.com/smnmyr/settings/privateTypeIndex.ttl> ;
+        vcard:role               "Professor of Computer Science" ;
+        <http://www.w3.org/ns/solid/terms#publicTypeIndex>  <https://pod.inrupt.com/smnmyr/settings/publicTypeIndex.ttl> ;
+        vcard:organization-name  "University of St.Gallen" ;
+        <http://www.w3.org/ns/pim/space#storage>  <https://pod.inrupt.com/smnmyr/> ;
+        foaf:img                 <https://pod.inrupt.com/smnmyr/public/publicPortrait-smnmyr.jpg> ;
+        <http://www.w3.org/ns/solid/terms#oidcIssuer>  <https://broker.pod.inrupt.com/> .
