@@ -1,3 +1,3 @@
 ## Welcome to GitHub Pages
 
-[card](smnmyr-card.ttl)
+[card](smnmyr-card)
