@@ -36,5 +36,5 @@
         <http://www.w3.org/ns/solid/terms#publicTypeIndex>  <https://pod.inrupt.com/smnmyr/settings/publicTypeIndex.ttl> ;
         vcard:organization-name  "University of St.Gallen" ;
         <http://www.w3.org/ns/pim/space#storage>  <https://pod.inrupt.com/smnmyr/> ;
-        foaf:img                 <https://pod.inrupt.com/smnmyr/public/publicPortrait-smnmyr.jpg> ;
+        foaf:img                 <https://pod.inrupt.com/smnmyr/public/publicPortrait-square.jpg> ;
         <http://www.w3.org/ns/solid/terms#oidcIssuer>  <https://broker.pod.inrupt.com/> .
